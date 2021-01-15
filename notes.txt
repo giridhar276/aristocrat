@@ -1,0 +1,396 @@
+
+Everything in python is Object
+** Every object contains set of methods ****
+
+
+number
+--------
+number can be integer or decimal or octal or hexa.
+
+val = 10
+aval = 45.4
+
+string
+-------
+string can be defined in single or double or triple quotes.
+
+aname = 'python programming'
+bname = "scala programming"
+cname = """hadoop"""
+
+
+list
+-----
+list contains set of elements.
+Elements can be set of numbers or strings or any combination.
+list elements are defined in [].
+
+alist = [10,20,30]
+blist = ["unix","go","scala"]
+clist = [20,3,4.5,"java"]
+
+
+
+tuple ( immutable | unchangable )
+-----
+tuple contains set of elements.
+Elements can be set of numbers or strings or any combination.
+tuple elements are defined in ().
+****** Elements inside tuple CANNOT be modified DIRECTLY *******
+
+atup = (45,45,4)
+btup = ("unix",56,5.5)
+
+
+dictionary|hash|map
+------------
+dictionary contains elements in key:value pairs
+dictionary elements are defined in {}.
+keys are used to uniquely identify the value.
+keys should be either number or string.
+values are number,string,list,tuple,dictionary.
+
+
+
+syntax:    object = {key:value , key:value , key:value }
+example:     book = {"chap1":10 ,"chap2":20 ,"chap3":30 , "chap1":1000,2:5}
+             values= {1:2,3:4,5:6}
+              data = {"chap1":[10,"UK","Rita"] ,"chap2":[20,"US","Sita"] ,"chap3":[30,"AUS","John"] }
+             
+
+
+
+
+
+
+
+set
+=---
+set is UNORDERED collection of UNIQUE elements of SAME type.
+
+aset = {10,10,10,20,30}
+
+
+
+classification of objects
+---------------------------
+
+mutable objects
+------------------
+list
+dictionary
+set
+
+immutable objects
+---------------------
+number
+string
+tuple
+
+
+
+methods & functions
+---------------------
+
+
+methods: 
+- methods are object specific.
+- Every object has its different methods
+
+
+functions:
+- functions are common for all the objects
+  ( print()   list()   tuple()   help()   range()  isinstance()  type()   len()   input())
+
+
+operators
+------------
+
+arithmetic operators :  + -  *  % / 
+
+logical operators    :  and        if  len(name) ==5  and name.isupper():
+                                         ## print() 
+ 
+                        or         if len(name) ==5  or name.isupper():
+                        not
+
+
+relational operators :< <= > >= == !=
+
+assignment operators :( ++ and -- are not allowed in python )
+
+val = 1
+val = val + 1  (or)  val+=1
+val = val -1  (or)   val-=1
+
+
+special operators
+------------------
+in
+as
+
+
+
+functions|definition|subroutines
+-------------------------------
+
+
+
+different ways of passing arguments
+----------------------------------
+
+fixed arguments
+default arguments
+keyword arguments
+variable length arguments
+
+
+
+
+
+
+file handling
+----------------
+
+- working with flat files  ( log txt conf csv tsv .... )
+- working with third party files ( pdf docx pptx xlsx mp4.....  )
+
+
+
+read  ( r)
+write ( w)
+apppend(a)
+
+
+opening the file
+---------------------
+syntax  :      object = open(filename,mode)
+example:        fobj  = open("customers.txt","r")
+                fobj  = open("customers.txt","w")
+
+                fobj  = open("customers.txt","a")
+
+
+closing the file
+---------------------
+fobj.close()
+
+
+read operation
+------------------
+
+- reading line by line using file object itself
+- fobj.readlines()
+- fobj.read()
+- using csv library
+- using pandas library ( data analytics)  ( numpy and scipy )
+
+
+exception handling
+-------------------
+
+Basically... we have 2 types of errors.
+
+1. syntax error
+2. semantic error or runtime error or logical errors
+
+Handling the exceptions in the runtime is known as exception handling.
+
+try
+except
+else
+finally
+raise
+
+
+
+libraries/packages
+------------------
+
+Builtin libraries : Build libraries are used by everyone for regular activities ( file handling , parsing, emailing,
+                                        OS activities , system info, copy files , ftp , math operations)
+                    8000+ libraries are already available
+
+third party libraries : Depending on the requirement ( ML related , cloud related , automation , DB related)
+                        developer has to install the library from www.pypi.org  or using pip tool or easy_install.
+
+
+
+
+
+1. delete a file in python    os.remove('abc.py')     os.unlink(file)
+
+2. copy the file from C: to D:    shutil.copy(source,destinati)       
+                                        .move(s,d)
+
+3. connect to Oracle         :     cx_Oracle
+           to mysql          :     pymysql , mysql.connector
+
+4.  connect to aws cloud     :     boto3     
+                           
+
+
+
+
+
+
+8000+  builtin libraries
+250000+ third party library
+
+builtin libraries
+-----------------------
+
+os            : os.listdir() os.remove() 
+sys           : system config information
+urllib.request: working with http
+math          : mathematical operations
+random        : random numbers
+calendar
+smtplib       : sending mails
+ftplib        : ftp'ng the file
+telnetlib     :
+logging       : logging all the events
+shutil        : copy,move,rmtree ....
+filecmp       : comparing directories
+zipfile       : create/extract the zip files
+rarfile       : create/extract the tar files
+tarfile       : create/extract the tarfiles
+getpass       : shadowing the password
+json          : reading/writing json files
+csv           : reading/writing csv files
+xml        
+sysconfig     : system configuration
+collections   : working with dictionaries
+argparse      : passing args from command line
+optparse      : passing args from command line
+time          : working with date and time
+datetime      : working with date and time
+cryptography  : encrypting and decrypting the passwords
+heapq         : performing array operations
+gzip          : reading gunzip files
+re            : validating the strings
+ipadresss     : validting ip address
+platform      : display platform information
+pathlib       : creating temp files
+threading     : for performing multi threading
+multiprocessing:
+subprocess    : invoking the system commands ( linux or dos commands)
+
+
+
+frequently used third party libraries
+---------------------------------------
+database related
+----------------
+pymysql   :
+cx_Oracle
+pymongo
+pymssql
+pyautogui
+
+web frameworks ( developing web applications)
+--------------
+django
+flask
+bottom
+
+analytics/machine learning
+---------------------------
+numpy
+scipy
+pandas
+seaborn
+plotly
+ggplot
+matplotlib   : visualizing data .. bar graph.. pie graph
+scikit-learn :  machine learning algorithms
+
+image processing
+---------------
+pillow
+opencv
+
+APIs ( REST API) ( web services ) 
+-----
+requests
+
+excel programming
+------------------
+openpyxl    : reading/write excel files
+xlsxwriter  : writing to excel file
+python-docx : working with ms-word
+
+networking
+-----------
+paramiko   :  interacting with remote servers
+netmiko    :  connecting to router/switch
+pyping     :  ping any host or ip address
+
+
+
+web scrapping
+--------------
+beautifulsoup
+scrapy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
