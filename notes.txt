@@ -286,7 +286,7 @@ pymysql   :
 cx_Oracle
 pymongo
 pymssql
-pyautogui
+
 
 web frameworks ( developing web applications)
 --------------
@@ -318,6 +318,8 @@ excel programming
 ------------------
 openpyxl    : reading/write excel files
 xlsxwriter  : writing to excel file
+pyexcel
+xlrd
 python-docx : working with ms-word
 
 networking
@@ -344,6 +346,72 @@ scrapy
 
 
 
+
+
+database commands
+-------------------
+
+
+display all databases
+----------------------
+show databases;
+
+creating database
+-------------------
+create database aristocrat;
+
+accessing your database
+-------------------------
+use aristocrat;
+
+displaying tables
+------------------
+show tables;  ( empty )
+
+create table
+-------------
+create table realestate(street varchar(100),city varchar(100) ) ;
+
+inserting records
+-----------------
+insert into realestate values('MG Road','Delhi');
+
+commit;
+
+displaying records
+------------------
+select * from realestate;
+
+
+
+
+
+
+
+
+
+
+
+re : regular expression
+------------------------
+-re.match
+-re.search
+-re.sub
+-re.split
+
+
+metacharacters/wildcard characters
+------------------------------------
+^ $ * + ?  ()  [] {} \s \w .
+
+^:  match only at the beginning of the string
+    if
+
+$ : end of the string
+
+* : zero or more occurences of the preceding character
+
++ : one or more occurences of the preceding character
 
 
 
